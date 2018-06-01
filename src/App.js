@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Layout, Menu, Breadcrumb, Icon} from 'antd';
 import SiderCustom from './component/SiderCustom'
+import ARouter from './routes'
 
 const {Header, Content, Footer, Sider} = Layout;
 
@@ -9,9 +10,12 @@ class App extends Component {
         collapsed: false,
     }
 
-    onCollapse = (collapsed) => {
-        console.log(collapsed);
-        this.setState({collapsed});
+    onCollapse = () => {
+        console.log(this.props.location.pathname.split('/'))
+        console.log(this.state.collapsed)
+        this.setState({
+            collapsed: !this.state.collapsed
+        });
     }
 
     render() {
@@ -19,15 +23,17 @@ class App extends Component {
             <Layout style={{minHeight: '100vh'}}>
                 <SiderCustom collapsed={this.state.collapsed} onCollapse={this.onCollapse}/>
                 <Layout>
-                    <Header style={{background: '#fff', padding: 0}}/>
+                    <Header style={{background: '#fff', padding: 0}}>
+                        <Menu
+                            mode="horizontal"
+                            style={{lineHeight: '64px'}}
+                        >
+                            <Menu.Item key="fold" onClick={this.onCollapse}><Icon
+                                type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}/></Menu.Item>
+                        </Menu>
+                    </Header>
                     <Content style={{margin: '0 16px'}}>
-                        <Breadcrumb style={{margin: '16px 0'}}>
-                            <Breadcrumb.Item>User</Breadcrumb.Item>
-                            <Breadcrumb.Item>Bill</Breadcrumb.Item>
-                        </Breadcrumb>
-                        <div style={{padding: 24, background: '#fff', minHeight: 360}}>
-                            Bill is a cat.
-                        </div>
+                        <ARouter/>
                     </Content>
                     <Footer style={{textAlign: 'center'}}>
                         React & Ant Design ©2018 Created by xless.cn
