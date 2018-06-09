@@ -1,13 +1,19 @@
 import React ,{Component} from 'react'
-import { Spin ,Row ,Col,Card,Alert,Switch} from 'antd';
+import { Spin ,Row ,Col,Card,Alert,Switch,Button} from 'antd';
 import BreadcrumbCustom from '../BreadcrumbCustom'
-
+import NProgress from 'nprogress'
 
 export default class Loadings extends Component{
     state = { loading: false }
     toggle = (value) => {
         this.setState({ loading: value });
     }
+    nprogressStart = () => {
+        NProgress.start();
+    };
+    nprogressDone = () => {
+        NProgress.done();
+    };
     render(){
         const container = (
             <Alert
@@ -52,6 +58,21 @@ export default class Loadings extends Component{
                                 Loading state：<Switch checked={this.state.loading} onChange={this.toggle} />
                             </div>
                         </Card>
+                    </Col>
+                    <Col className="gutter-row" md={12}>
+                        <div className="gutter-box">
+                            <Card bordered={false}>
+                                <h4>顶部进度条</h4>
+                                <p>
+                                    <Button icon="caret-right" onClick={this.nprogressStart} />
+                                    <span> NProgress.start() — 显示进度条</span>
+                                </p>
+                                <p style={{marginTop: 20}}>
+                                    <Button icon="caret-right" onClick={this.nprogressDone} />
+                                    <span>  NProgress.done() — 进度条完成</span>
+                                </p>
+                            </Card>
+                        </div>
                     </Col>
                 </Row>
             </div>

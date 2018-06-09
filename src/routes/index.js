@@ -4,6 +4,10 @@ import Dashboard from '../component/Dashboard'
 import Buttons from '../component/ui/Buttons'
 import IconComponents from '../component/ui/IconComponents'
 import Loadings from '../component/ui/Loadings'
+import Conversations from '../component/ui/Conversations'
+import Notices from '../component/ui/Notices'
+import Tags from '../component/ui/Tags'
+import Banners from '../component/ui/Banners'
 
 export default class ARouter extends Component {
     render() {
@@ -13,6 +17,10 @@ export default class ARouter extends Component {
                 <Route exact path="/app/ui/buttons" component={Buttons}/>
                 <Route exact path="/app/ui/icons" component={IconComponents}/>
                 <Route exact path="/app/ui/loadings" component={Loadings}/>
+                <Route exact path="/app/ui/conversations" component={Conversations}/>
+                <Route exact path="/app/ui/notices" component={Notices}/>
+                <Route exact path="/app/ui/tags" component={Tags}/>
+                <Route exact path="/app/ui/banners" component={Banners}/>
             </Switch>
         )
     }
