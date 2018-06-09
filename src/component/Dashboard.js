@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
-import {Col, Row, Card,Icon} from 'antd'
+import {Col, Row, Card, Icon} from 'antd'
 import BreadcrumbCustom from '../component/BreadcrumbCustom'
+import EchartDash from '../component/charts/EchartDash'
 
 export default class Dashboard extends Component {
     render() {
@@ -9,39 +10,33 @@ export default class Dashboard extends Component {
                 <BreadcrumbCustom {...this.props.location}/>
                 <div>
                     <Row gutter={16}>
-                        <Col span={8}>
-                            <Row gutter={16}>
-                                <Col span={12}>
-                                    <Card bordered={false} >
-                                        <div>
-                                            <Icon type="heart" className="text-2x text-danger"/>
-                                            <span className="">520</span>
-                                        </div>
-                                    </Card>
-                                </Col>
-                                <Col span={12}>
-                                    <Card bordered={false} >
-                                        <Icon type="heart" className="text-2x"/>
-                                        <span className="">520</span>
-                                    </Card>
-                                </Col>
-                                <Col span={12}>
-                                    <Card bordered={false} >
-                                        <div>
-                                            <Icon type="heart" className="text-2x"/>
-                                            <span className="">520</span>
-                                        </div>
-                                    </Card>
-                                </Col>
-                                <Col span={12}>
-                                    <Card bordered={false} >
-                                        <Icon type="heart" className="text-2x"/>
-                                        <span className="">520</span>
-                                    </Card>
-                                </Col>
-                            </Row>
+                        <Col md={4}>
+                            <Card bordered={false}>
+                                <div>
+                                    <span className="text-danger">
+                                        <Icon type="heart"/>
+                                    </span>
+                                    <h2>520</h2>
+                                </div>
+                            </Card>
+                            <Card bordered={false}>
+                                <Icon type="plus-square-o" />
+                                <span className="">520</span>
+                            </Card>
                         </Col>
-                        <Col span={16}>col-8</Col>
+                        <Col md={4}>
+                            <Card bordered={false}>
+                                <div>
+                                    <Icon type="info-circle" />
+                                    <span className="">520</span>
+                                </div>
+                            </Card>
+                            <Card bordered={false}>
+                                <Icon type="warning" />
+                                <span className="">520</span>
+                            </Card>
+                        </Col>
+                        <Col md={16}><EchartDash/></Col>
                     </Row>
                 </div>
             </div>
