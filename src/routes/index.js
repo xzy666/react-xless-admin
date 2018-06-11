@@ -9,6 +9,10 @@ import Notices from '../component/ui/Notices'
 import Tags from '../component/ui/Tags'
 import Banners from '../component/ui/Banners'
 import Editors from '../component/ui/Editors'
+import Draggables from '../component/ui/Draggables'
+import Galleries from '../component/ui/Galleries'
+import Maps from '../component/ui/Maps'
+
 
 export default class ARouter extends Component {
     render() {
@@ -23,6 +27,9 @@ export default class ARouter extends Component {
                 <Route exact path="/app/ui/tags" component={Tags}/>
                 <Route exact path="/app/ui/banners" component={Banners}/>
                 <Route exact path="/app/ui/editors" component={Editors}/>
+                <Route exact path="/app/ui/draggable" component={Draggables}/>
+                <Route exact path="/app/ui/galleries" component={Galleries}/>
+                <Route exact path="/app/ui/maps" component={Maps}/>
             </Switch>
         )
     }

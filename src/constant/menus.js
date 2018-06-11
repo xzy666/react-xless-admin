@@ -11,9 +11,30 @@ export const menus = [
             {key: '/app/ui/tags', title: '标签页', icon: 'tag-o'},
             {key: '/app/ui/banners', title: '轮播图', icon: 'eye'},
             {key: '/app/ui/editors', title: '富文本', icon: 'solution'},
-            {key: '/app/ui/drags', title: '拖拽', icon: 'cloud-o'},
+            {key: '/app/ui/draggable', title: '拖拽', icon: 'cloud-o'},
             {key: '/app/ui/galleries', title: '画廊', icon: 'camera'},
             {key: '/app/ui/maps', title: '地图', icon: 'environment'},
+        ]
+    },
+    {
+        key:'/app/animation',title:'动画',icon:'smile',
+        sub:[
+            {key: '/app/ui/basic', title: '基础动画', icon: 'meh'},
+            {key: '/app/ui/cases', title: '动画案例', icon: 'meh-o'},
+        ]
+    },
+    {
+        key:'/app/table',title:'表格',icon:'table',
+        sub:[
+            {key: '/app/ui/basic', title: '基础动画', icon: 'meh'},
+            {key: '/app/ui/cases', title: '动画案例', icon: 'meh-o'},
+        ]
+    },
+    {
+        key:'/app/form',title:'表单',icon:'form',
+        sub:[
+            {key: '/app/ui/basic', title: '基础动画', icon: 'database'},
+            {key: '/app/ui/cases', title: '动画案例', icon: 'database'},
         ]
     }
 ]

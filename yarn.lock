@@ -5402,6 +5402,10 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "http://registry.npm.taobao.org/performance-now/download/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
+photoswipe@^4.1.2:
+  version "4.1.2"
+  resolved "http://registry.npm.taobao.org/photoswipe/download/photoswipe-4.1.2.tgz#95c20a75cea23b70d6299641cad82e03cae7f797"
+
 pify@^2.0.0, pify@^2.3.0:
   version "2.3.0"
   resolved "http://registry.npm.taobao.org/pify/download/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -6349,6 +6353,13 @@ react-draft-wysiwyg@^1.12.13:
     draftjs-utils "^0.9.3"
     html-to-draftjs "^1.4.0"
     linkify-it "^2.0.3"
+    prop-types "^15.6.0"
+
+react-draggable@^3.0.5:
+  version "3.0.5"
+  resolved "http://registry.npm.taobao.org/react-draggable/download/react-draggable-3.0.5.tgz#c031e0ed4313531f9409d6cd84c8ebcec0ddfe2d"
+  dependencies:
+    classnames "^2.2.5"
     prop-types "^15.6.0"
 
 react-error-overlay@^4.0.0:
