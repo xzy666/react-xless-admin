@@ -10,7 +10,7 @@ export const menus = [
             {key: '/app/ui/notices', title: '通知提示栏', icon: 'phone'},
             {key: '/app/ui/tags', title: '标签页', icon: 'tag-o'},
             {key: '/app/ui/banners', title: '轮播图', icon: 'eye'},
-            {key: '/app/ui/texts', title: '富文本', icon: 'solution'},
+            {key: '/app/ui/editors', title: '富文本', icon: 'solution'},
             {key: '/app/ui/drags', title: '拖拽', icon: 'cloud-o'},
             {key: '/app/ui/galleries', title: '画廊', icon: 'camera'},
             {key: '/app/ui/maps', title: '地图', icon: 'environment'},
