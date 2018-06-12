@@ -19,22 +19,22 @@ export const menus = [
     {
         key:'/app/animation',title:'动画',icon:'smile',
         sub:[
-            {key: '/app/ui/basic', title: '基础动画', icon: 'meh'},
-            {key: '/app/ui/cases', title: '动画案例', icon: 'meh-o'},
+            {key: '/app/animation/basics', title: '基础动画', icon: 'meh'},
+            {key: '/app/animation/cases', title: '动画案例', icon: 'meh-o'},
         ]
     },
     {
         key:'/app/table',title:'表格',icon:'table',
         sub:[
-            {key: '/app/ui/basic', title: '基础动画', icon: 'meh'},
-            {key: '/app/ui/cases', title: '动画案例', icon: 'meh-o'},
+            {key: '/app/table/basic', title: '基础动画', icon: 'meh'},
+            {key: '/app/table/cases', title: '动画案例', icon: 'meh-o'},
         ]
     },
     {
         key:'/app/form',title:'表单',icon:'form',
         sub:[
-            {key: '/app/ui/basic', title: '基础动画', icon: 'database'},
-            {key: '/app/ui/cases', title: '动画案例', icon: 'database'},
+            {key: '/app/form/basic', title: '基础动画', icon: 'database'},
+            {key: '/app/form/cases', title: '动画案例', icon: 'database'},
         ]
     }
 ]

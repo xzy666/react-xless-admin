@@ -12,6 +12,8 @@ import Editors from '../component/ui/Editors'
 import Draggables from '../component/ui/Draggables'
 import Galleries from '../component/ui/Galleries'
 import Maps from '../component/ui/Maps'
+import Basics from '../component/animation/Basics'
+import Cases from '../component/animation/Cases'
 
 
 export default class ARouter extends Component {
@@ -30,6 +32,8 @@ export default class ARouter extends Component {
                 <Route exact path="/app/ui/draggable" component={Draggables}/>
                 <Route exact path="/app/ui/galleries" component={Galleries}/>
                 <Route exact path="/app/ui/maps" component={Maps}/>
+                <Route exact path="/app/animation/basics" component={Basics}/>
+                <Route exact path="/app/animation/cases" component={Cases}/>
             </Switch>
         )
     }
