@@ -36,7 +36,7 @@ export default class Basics extends Component {
                     {animations.map(i => (
                         <Col span={4}>
                             <Card
-                                className={`animated: ${this.state.animateOne}`}
+                                className={`animated ${this.state.animateOne}`}
                                 onMouseEnter={() => this.animationShow(i)}
                                 onMouseLeave={() => this.animationShow(i)}
                             >{i}</Card>

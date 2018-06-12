@@ -26,15 +26,15 @@ export const menus = [
     {
         key:'/app/table',title:'表格',icon:'table',
         sub:[
-            {key: '/app/table/basic', title: '基础动画', icon: 'meh'},
-            {key: '/app/table/cases', title: '动画案例', icon: 'meh-o'},
+            {key: '/app/table/basic', title: '基础表格', icon: 'api'},
+            {key: '/app/table/pre', title: '高级表格', icon: 'global'},
+            {key: '/app/table/async', title: '异步表格', icon: 'profile'},
         ]
     },
     {
         key:'/app/form',title:'表单',icon:'form',
         sub:[
-            {key: '/app/form/basic', title: '基础动画', icon: 'database'},
-            {key: '/app/form/cases', title: '动画案例', icon: 'database'},
+            {key: '/app/form/basic', title: '基础表单', icon: 'form'},
         ]
     }
 ]

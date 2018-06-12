@@ -14,6 +14,10 @@ import Galleries from '../component/ui/Galleries'
 import Maps from '../component/ui/Maps'
 import Basics from '../component/animation/Basics'
 import Cases from '../component/animation/Cases'
+import BasicTables from '../component/Table/BasicTables'
+import PreTables from '../component/Table/PreTables'
+import AsyncTables from '../component/Table/AsyncTables'
+import BasicForm from '../component/Form/BasicForms'
 
 
 export default class ARouter extends Component {
@@ -34,6 +38,10 @@ export default class ARouter extends Component {
                 <Route exact path="/app/ui/maps" component={Maps}/>
                 <Route exact path="/app/animation/basics" component={Basics}/>
                 <Route exact path="/app/animation/cases" component={Cases}/>
+                <Route exact path="/app/table/basic" component={BasicTables}/>
+                <Route exact path="/app/table/pre" component={PreTables}/>
+                <Route exact path="/app/table/async" component={AsyncTables}/>
+                <Route exact path="/app/form/basic" component={BasicForm}/>
             </Switch>
         )
     }
